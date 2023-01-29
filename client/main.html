@@ -1,0 +1,27 @@
+<head>
+  <title>Task-3-meteor</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Unordered List</h1>
+    </header>
+
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+
+    {{> hello}}
+  </div>
+</body>
+
+<template name="task">
+  <li>{{text}}</li>
+</template>
+
+<template name="hello">
+  <button>Click Me</button>
+</template>
